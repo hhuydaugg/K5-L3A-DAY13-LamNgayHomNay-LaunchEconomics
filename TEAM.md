@@ -64,10 +64,11 @@ Sao chép mục dưới đây cho từng thành viên.
 - A1: ba hàm `so_lan_chay_ky_vong`, `ti_le_thanh_cong`, `he_so_chi_phi_moi_viec_thanh_cong`, ba phép thử in ĐẠT (1,20 · 1,25 · 1,25).
 - A2–A4: hàm `mo_hinh`; chi phí mỗi việc thành công 4.472 đ [simulated], gấp 16,3 lần hoá đơn token + tool chia số yêu cầu (274,7 đ); tách theo loại (quoc_te 1,88× của 12.000 đ); phạm vi noi_dia + hang_nang cộng chi phí cố định: 4.599 đ = 0,38× [simulated].
 - B1–B4: 9 kịch bản độ nhạy (làm lại gấp đôi +51,8%, xem lại gấp đôi +40,7%), một cặp (+46,3%), giới hạn 2 lần chạy rẻ nhất cho cả hệ thống (6.901.220 đ), xem lại 100% = 11.743 đ = 0,98× [simulated].
+- D1 (kiểm số): tính tay cả 5 câu, khớp code CP4: 1.251 · 3.103 yêu cầu = 42 người/nhóm · 1.000 · 300 · m ≥ 299 (DE 6,96); ghi vào chú thích D1 của `report/team/pilot_plan.yaml`.
 
 ### Bằng chứng
 
-- `src/lab13.py` (chạy `cd src && python lab13.py`), `report/team/bang_chi_phi.md`; báo cáo cá nhân `report/team/2A202603410_NguyenHoangHuy.md`.
+- `src/lab13.py` (chạy `cd src && python lab13.py`), `report/team/bang_chi_phi.md`, chú thích D1 trong `report/team/pilot_plan.yaml`; commit `45e5bdd`; báo cáo cá nhân `report/team/2A202603410_NguyenHoangHuy.md`.
 
 ## PhanHaiDang-2A202603409
 

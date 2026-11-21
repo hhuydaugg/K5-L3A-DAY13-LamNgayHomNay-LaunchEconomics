@@ -36,12 +36,19 @@
   - Giới hạn 2 lần rẻ nhất cho công ty.
   - Chi phí mỗi việc thành công thấp nhất lại ở giới hạn 1 lần (4.111 đ).
 - **B4:** xem lại 100% trong phạm vi tốn **11.743 đ = 0,98×** [simulated] với 9 phút làm lại mỗi ca, và 12.415 đ = 1,03× với 15,3 phút (trung bình cột simulated). Hoà vốn khi mỗi lần xem lại ≤ 5,1 phút hoặc ≤ 4,8 phút.
+- **D1 (người kiểm số sau giải lao):** kiểm tay cả 5 câu theo công thức, không dùng hàm `co_mau` trong code, và đều khớp với code của người viết code CP4:
+  - a) (1,95996 × √0,39875 + 0,84162 × √0,3975)² ÷ 0,05² = 1.250,71 → **1.251**;
+  - b) DE 2,48 → 3.103 yêu cầu = 42 người mỗi nhóm;
+  - c) 1.000; d) 300;
+  - e) 2,82m ≥ 841,82 → **m ≥ 299** (DE 6,96).
+  - Đã ghi kết quả vào phần chú thích D1 đầu `pilot_plan.yaml`.
 
 ## 4. Bằng chứng
 
 - `src/lab13.py`: chạy `cd src && python lab13.py`, in ba phép thử ĐẠT và mọi bảng A, B.
 - `report/team/bang_chi_phi.md`: bảng A1, A2 (9 dòng, có nhãn `simulated`), A3 (4 dòng), A4, B1 (9 dòng), B3, B4.
-- Commit: (điền hash sau khi push).
+- `report/team/pilot_plan.yaml`: phần chú thích D1 (a–e) kèm phép tính tay.
+- Commit: `45e5bdd` (CP1–CP2: code A, B và bảng số); commit kiểm số D1 theo sau.
 
 ## 5. Công cụ AI đã dùng
 
@@ -55,5 +62,6 @@
 ## 6. Tự đánh giá
 
 - **Phần A, B:** đủ số và khớp đáp án.
-- **Chưa xong:** phần kiểm số D1 và rà soát cuối, vì phải chờ người viết code CP4 và hai người gắn nhãn.
+- **D1:** kiểm tay xong, khớp code.
+- **Chưa xong:** rà soát cuối và push bản chốt, vì còn chờ các trường còn `?` trong `pilot_plan.yaml`, phần tính thử chỉ số, phiếu chấm và báo cáo nhóm.
 - **Rút kinh nghiệm:** chi phí thật nằm ở giờ nhân viên (92,5% tổng chi phí [simulated]), không nằm ở token. Muốn giảm chi phí thì phải theo dõi tỉ lệ làm lại và tỉ lệ xem lại trong pilot.
