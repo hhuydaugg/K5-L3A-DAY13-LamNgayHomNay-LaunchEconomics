@@ -13,7 +13,7 @@ Chia theo 4 vai bắt buộc của lab (`TEAM.md`). Lab yêu cầu đổi ngư�
 | TV1 Nguyễn Hoàng Huy (`hhuydaugg`, nhóm trưởng) | Viết code trước giải lao → kiểm số sau giải lao | A1–A4 và B1–B4 trong `lab13.py`; kiểm tay một số D1; rà soát cuối; `TEAM.md`; push bản chốt | `src/lab13.py` (CP1, CP2), số trong `bang_chi_phi.md`, `TEAM.md` |
 | TV2 Phan Hải Đăng (`dangph12`) | Kiểm số trước giải lao → viết code sau giải lao | Tính tay đối chiếu A1, A2; viết câu trả lời A, xếp hạng B, B3, B4; code D1 và tỉ lệ `mo_lai_trong_7_ngay`; tính thử 3 chỉ số E1 | câu trả lời trong `bang_chi_phi.md`, `src/lab13.py` (CP4), các trường số của `pilot_plan.yaml` |
 | TV3 Hồ Xuân Vũ (`Him2K2`) | Gắn nhãn 1 | Bộ nhãn 1 cho 20 ca, tỉ lệ đồng thuận, quy tắc cho ca lệch; 5 câu D2 và 3 luật dừng; danh sách ≥ 6 event và 2 chỉ số đề xuất; dẫn phần chấm nhóm khác | `bang_loi.md` (nhãn 1, đồng thuận), luật dừng trong `pilot_plan.yaml`, `chi_so.md`, `phieu_cham.md` |
-| TV4 `KhuatHieu` (GitHub chưa ghi họ tên) | Gắn nhãn 2, kiêm giữ hồ sơ | Điền hồ sơ launch v0 từ đầu buổi; bộ nhãn 2 cho 20 ca; bảng khắc phục 5 ca; ≥ 2 dòng rủi ro kinh tế; trình bày ở Gate 2a; báo cáo nhóm | `ho_so_launch_v0.md`, `bang_loi.md` (nhãn 2, bảng khắc phục), phần rủi ro trong `chi_so.md`, `group_report.md` |
+| TV4 Khuất Duy Hiếu (`KhuatHieu`) | Gắn nhãn 2, kiêm giữ hồ sơ | Điền hồ sơ launch v0 từ đầu buổi; bộ nhãn 2 cho 20 ca; bảng khắc phục 5 ca; ≥ 2 dòng rủi ro kinh tế; trình bày ở Gate 2a; báo cáo nhóm | `ho_so_launch_v0.md`, `bang_loi.md` (nhãn 2, bảng khắc phục), phần rủi ro trong `chi_so.md`, `group_report.md` |
 
 Mỗi người tự làm báo cáo cá nhân `report/team/MSSV_HoTen.md` (copy từ file mẫu, giữ lại file mẫu), và tự nộp link repo trên LMS.
 
@@ -40,7 +40,7 @@ Mỗi người tự làm báo cáo cá nhân `report/team/MSSV_HoTen.md` (copy t
    - tính tay một số A1 và một số A2;
    - chép bảng A2 (9 dòng; hai dòng giả lập ghi `simulated`), A3 (4 dòng), A4 vào `bang_chi_phi.md`;
    - viết câu trả lời "vì sao tử số tính mọi lần chạy".
-5. **TV4** mở `ho_so_launch_v0.md`, điền mục chi phí ngay khi có số A2.
+5. **TV4** ~~mở `ho_so_launch_v0.md`, điền mục chi phí ngay khi có số A2~~: đã xong (điền luôn mục 1–3 theo số A2, A4, B1).
 6. **TV3** đọc trước định nghĩa năm loại lỗi của Google PAIR và phần D, E trong hướng dẫn chi tiết.
 
 ### 14:53 · CP2 — nhiệm vụ B
