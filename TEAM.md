@@ -1,4 +1,4 @@
-# Team
+﻿# Team
 
 ## Thông tin nhóm
 
@@ -74,7 +74,7 @@ Sao chép mục dưới đây cho từng thành viên.
 ### Phần việc phụ trách
 
 - Người kiểm số (CP1–CP2): đối chiếu số liệu, hoàn thiện bảng và câu trả lời A–B trong `report/team/bang_chi_phi.md`.
-- Theo phân công đổi sang viết code CP4–CP5; phần D1/E1 chưa được xác nhận hoàn thành trong báo cáo cá nhân.
+- Sau giải lao: bổ sung code D1, tỉ lệ mở lại và hoàn thiện các trường kế hoạch CP4; E1 chưa xác nhận hoàn thành.
 
 ### Đóng góp cụ thể
 
@@ -87,4 +87,6 @@ Sao chép mục dưới đây cho từng thành viên.
 
 - [Bảng chi phí A–B](report/team/bang_chi_phi.md).
 - [Báo cáo cá nhân](report/team/2A202603409_PhanHaiDang.md).
+- CP4: [code D1](src/lab13.py), [kế hoạch pilot](report/team/pilot_plan.yaml); 20 cụm/nhóm, MDE 6 điểm, 299 yêu cầu/người. Chưa chạy kiểm tra Python/YAML.
 - Nguồn đối chiếu: [Hướng dẫn chi tiết](docs/Lab13_Huong_dan_chi_tiet_buoi_chieu.md), phần A–B.
+

@@ -9,7 +9,7 @@
 
 ## 2. Phần việc phụ trách
 
-Đối chiếu số liệu và hoàn thiện bảng, câu trả lời nhiệm vụ A–B trong `bang_chi_phi.md`.
+Đối chiếu và hoàn thiện báo cáo A–B; viết phần tính cỡ mẫu D1 và điền kế hoạch pilot CP4.
 
 ## 3. Đóng góp cụ thể
 
@@ -18,9 +18,13 @@
 - Xếp hạng yếu tố ảnh hưởng: làm lại, xem lại, lương nhân viên.
 - Nêu giới hạn 2 lần chạy rẻ nhất cho cả hệ thống: 6.901.220 đ [simulated]; bổ sung nhãn và lưu ý phạm vi chi phí.
 
+- CP4: bổ sung code tính 5 câu D1 và tỉ lệ mở lại; điền kế hoạch chia 20 nhân viên/nhóm, MDE 6 điểm, 859 mẫu hiệu dụng/nhóm, 299 yêu cầu/người.
+
 ## 4. Bằng chứng
 
 [Bảng chi phí](bang_chi_phi.md).
+
+[Code CP4](../../src/lab13.py) và [kế hoạch pilot](pilot_plan.yaml).
 
 ## 5. Công cụ AI đã dùng
 
@@ -29,3 +33,4 @@ Dùng ChatGPT/Codex hỗ trợ tổng hợp số liệu và soạn câu trả l�
 ## 6. Tự đánh giá
 
 Đã hoàn thiện phần báo cáo A–B; hiểu sự khác nhau giữa chi phí mỗi việc thành công và chi phí cả hệ thống.
+
