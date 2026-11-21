@@ -10,15 +10,15 @@
 #   e) Mức chênh 6 điểm (859 mỗi nhóm), 20 nhân viên mỗi nhóm:
 #
 # D2 · Năm câu kiểm tra "tách được tác động" với cách chia đã chọn (mỗi câu một dòng):
-#   1. Đối chứng chạy cùng thời gian:
-#   2. Chia ngẫu nhiên hay do người chọn:
-#   3. Ảnh hưởng gián tiếp và cách giảm:
-#   4. Chỉ số chính, ngưỡng, ngày quyết định đã viết trước:
-#   5. Ít nhất 20 cụm mỗi nhóm:
+#   1. Đối chứng chạy cùng thời gian: Có, 20 nhân viên đối chứng và 20 nhân viên dùng trợ lý cùng tuần trong cùng 6 depot.
+#   2. Chia ngẫu nhiên hay do người chọn: Bốc thăm bằng code với seed ghi trước, phân tầng theo depot.
+#   3. Ảnh hưởng gián tiếp và cách giảm: Có nguy cơ nhân viên chia sẻ kinh nghiệm; giảm bằng truy cập theo tài khoản staff_id và ghi log lượt mở trợ lý.
+#   4. Chỉ số chính, ngưỡng, ngày quyết định đã viết trước: Chỉ số chính, ngưỡng dừng và ngày 2027-01-05 được ghi trước khi bắt đầu.
+#   5. Ít nhất 20 cụm mỗi nhóm: Có, cách chia theo nhân viên có đúng 20 cụm mỗi nhóm.
 #
-# Đánh đổi đã chấp nhận (nếu cách chia chưa đạt cả hai điều kiện):
+# Đánh đổi đã chấp nhận: 40 nhân viên, 20 cụm mỗi nhóm, không đủ power cho chênh 5 điểm (mức trần hiệu dụng 1.000 < 1.251); chấp nhận MDE 6 điểm, n=859 mỗi nhóm, với power khoảng 0,64 nếu tác động thật chỉ là 5 điểm.
 #
-# Tỉ lệ mo_lai_trong_7_ngay hiện tại và ngưỡng an toàn đã chọn:
+# Tỉ lệ mo_lai_trong_7_ngay hiện tại: 4,25% toàn mẫu (3,97% trong noi_dia + hang_nang); ngưỡng an toàn: chênh ít nhất 2 điểm so với đối chứng hoặc vượt trần tuyệt đối 6%.
 
 pilot:
   owner: "?"                      # một người có tên vai trò, không ghi "cả đội"
@@ -42,9 +42,9 @@ pilot:
     spillover_risk: "?"
     predeclared: "?"
   stop_rules:
-    - "NẾU ? TRONG ? THÌ ? KHÔNG THÌ ?"
-    - "NẾU ? TRONG ? THÌ ? KHÔNG THÌ ?"
-    - "NẾU ? TRONG ? THÌ ? KHÔNG THÌ ?"
+    - "NẾU tỉ lệ mở lại trong 7 ngày ở các yêu cầu đã đủ 7 ngày theo dõi của nhóm trợ lý cao hơn đối chứng ít nhất 2 điểm hoặc vượt trần tuyệt đối 6% TRONG 3 lần kiểm tra hằng ngày liên tiếp THÌ Giám đốc vận hành tắt trợ lý trong 30 phút KHÔNG THÌ không được sang bước rollout tiếp"
+    - "NẾU chi phí mỗi việc thành công vượt 8.000 đ TRONG 2 tuần liên tiếp THÌ PM trợ lý hoàn phí thu hẹp phạm vi về noi_dia và giới hạn 2 lần chạy KHÔNG THÌ không được mở hang_nang"
+    - "NẾU tỉ lệ nhân viên bỏ qua gợi ý (sua + bo) vượt 40% TRONG 1 tuần THÌ Trưởng nhóm CSKH phỏng vấn 5 nhân viên trong 3 ngày KHÔNG THÌ không được chuyển bước rollout"
   interim_looks: "chỉ kiểm tra chỉ số an toàn"
   rollback: "?"                   # ai bấm, mất bao lâu, khách được phục vụ bằng gì
   decision_date: "?"
