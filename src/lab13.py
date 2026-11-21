@@ -1,4 +1,4 @@
-"""Lab 13 · Định giá agent và lập kế hoạch pilot (Gate 2a) — bài làm của nhóm (file nộp).
+﻿"""Lab 13 · Định giá agent và lập kế hoạch pilot (Gate 2a) — bài làm của nhóm (file nộp).
 Chạy trong thư mục src/: python3 lab13.py   (cần pandas; Nhiệm vụ D cần thêm statsmodels)
 Không cần khoá API. Điền các chỗ ghi VIẾT Ở ĐÂY (đánh dấu TODO CP1…CP4). Dữ liệu trong hai file CSV là giả lập.
 Bản gốc chưa sửa nằm ở lab13_starter.py.
@@ -105,6 +105,13 @@ def so(x, n=1):
 if __name__ == '__main__':
     runs = pd.read_csv('logix_runs.csv')
     reqs = pd.read_csv('logix_requests.csv', keep_default_na=False)
+    # Bỏ dòng tổng cuối CSV không đại diện cho một yêu cầu.
+    reqs = reqs[reqs['request_id'].str.strip().ne('')].copy()
+    # keep_default_na=False giữ ô quyết định trống; ép lại các cột số sau khi bỏ dòng tổng.
+    for cot in ['so_tien_vnd', 'so_lan_chay', 'duoc_xem_lai',
+                'phut_xem_lai_simulated', 'phut_lam_lai_simulated',
+                'dong_trong_24h', 'mo_lai_trong_7_ngay']:
+        reqs[cot] = pd.to_numeric(reqs[cot], errors='raise')
     kiem_tra_dap_an_biet_truoc()
     sim = ' [simulated]'
 
@@ -214,6 +221,40 @@ if __name__ == '__main__':
               f'token + tool {nghin(token_tool)} đ; tổng {nghin(tong_b4)} đ → {nghin(tong_b4 / m_pv["thanh_cong"])} đ/việc = '
               f'{lan(tong_b4 / m_pv["thanh_cong"] / BASELINE)}{sim}; hoà vốn khi mỗi lần xem lại ≤ {so(hoa_von)} phút')
 
-    # TODO CP4 · Nhiệm vụ D: cỡ mẫu.
-    #   from statsmodels.stats.proportion import proportion_effectsize
-    #   from statsmodels.stats.power import NormalIndPower
+    # ---------- CP4 · D1: cỡ mẫu và tỉ lệ mở lại hiện tại ----------
+    from statistics import NormalDist
+
+    def co_mau(p1, p2, alpha=0.05, power=0.8):
+        za = NormalDist().inv_cdf(1 - alpha / 2)
+        zb = NormalDist().inv_cdf(power)
+        pb = (p1 + p2) / 2
+        return math.ceil((za * math.sqrt(2 * pb * (1 - pb))
+                          + zb * math.sqrt(p1 * (1 - p1) + p2 * (1 - p2))) ** 2
+                         / (p2 - p1) ** 2)
+
+    icc, cum_moi_nhom = 0.02, 20
+    n5 = co_mau(0.70, 0.75)
+    de75 = 1 + (75 - 1) * icc
+    n_cum75 = math.ceil(n5 * de75)
+    nguoi_moi_nhom = math.ceil(n_cum75 / 75)
+    n6 = co_mau(0.70, 0.76)
+    m6 = math.ceil(n6 * (1 - icc) / (cum_moi_nhom - n6 * icc))
+    de6 = 1 + (m6 - 1) * icc
+    in_bang('D1 · Cỡ mẫu (số yêu cầu tính cho mỗi nhóm)', ['Câu', 'Kết quả'], [
+        ['a · Theo yêu cầu, chênh 5 điểm', str(n5)],
+        ['b · Theo nhân viên, m = 75',
+         f'DE = {so(de75, 2)}; {n_cum75} yêu cầu; {nguoi_moi_nhom} người/nhóm; tổng {2 * nguoi_moi_nhom} > 40'],
+        ['c · 20 nhân viên/nhóm', f'Trần hiệu dụng < {cum_moi_nhom / icc:.0f} < {n5}: không đủ'],
+        ['d · 6 depot/nhóm', f'Trần hiệu dụng < {6 / icc:.0f}: không đủ'],
+        ['e · Chênh 6 điểm, 20 nhân viên/nhóm',
+         f'n = {n6}; m = {m6}; DE = {so(de6, 2)}; hiệu dụng = {so(cum_moi_nhom * m6 / de6, 2)}'],
+    ])
+    print('Chọn chia ngẫu nhiên theo nhân viên, 20 cụm/nhóm, chấp nhận MDE 6 điểm; '
+          'power khoảng 0,64 nếu tác động thật chỉ 5 điểm (số tham khảo hướng dẫn).')
+    print(f'Mở lại trong 7 ngày: {int(reqs["mo_lai_trong_7_ngay"].sum())}/{len(reqs)} '
+          f'= {phan_tram(reqs["mo_lai_trong_7_ngay"].mean())}; '
+          f'trong phạm vi pilot: {int(pv["mo_lai_trong_7_ngay"].sum())}/{len(pv)} '
+          f'= {so(pv["mo_lai_trong_7_ngay"].mean() * 100, 2)}% (dữ liệu giả lập).')
+
+
+
