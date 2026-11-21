@@ -15,7 +15,7 @@
 |   1 | Nguyễn Hoàng Huy | 2A202603410 | hhuynguyen2803@gmail.com | hhuydaugg | Người viết code (CP1–CP2) → người kiểm số (CP4–CP5); nhóm trưởng |
 |   2 | Phan Hải Đăng | (tự điền) | (tự điền) | dangph12 | Người kiểm số (CP1–CP2) → người viết code (CP4–CP5) |
 |   3 | Hồ Xuân Vũ | 2A202603406 | (tự điền) | Him2K2 | Người gắn nhãn 1 |
-|   4 | (tự điền họ tên) | (tự điền) | (tự điền) | KhuatHieu | Người gắn nhãn 2, kiêm giữ hồ sơ |
+|   4 | Khuất Duy Hiếu | 2A202603383 | hieukhuatduy@gmail.com | KhuatHieu | Người gắn nhãn 2, kiêm giữ hồ sơ |
 
 Bốn vai của lab:
 
