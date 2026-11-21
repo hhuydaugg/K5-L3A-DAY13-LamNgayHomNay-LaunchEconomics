@@ -13,7 +13,7 @@
 | STT | Họ tên | MSSV | Email | GitHub | Vai trò |
 | --: | ------ | ---- | ----- | ------ | ------- |
 |   1 | Nguyễn Hoàng Huy | 2A202603410 | hhuynguyen2803@gmail.com | hhuydaugg | Người viết code (CP1–CP2) → người kiểm số (CP4–CP5); nhóm trưởng |
-|   2 | Phan Hải Đăng | (tự điền) | (tự điền) | dangph12 | Người kiểm số (CP1–CP2) → người viết code (CP4–CP5) |
+|   2 | Phan Hải Đăng | 2A202603409 | haidangphan2015@gmail.com | dangph12 | Người kiểm số (CP1–CP2) → người viết code (CP4–CP5) |
 |   3 | Hồ Xuân Vũ | 2A202603406 | (tự điền) | Him2K2 | Người gắn nhãn 1 |
 |   4 | (tự điền họ tên) | (tự điền) | (tự điền) | KhuatHieu | Người gắn nhãn 2, kiêm giữ hồ sơ |
 
@@ -69,3 +69,22 @@ Sao chép mục dưới đây cho từng thành viên.
 
 - `src/lab13.py` (chạy `cd src && python lab13.py`), `report/team/bang_chi_phi.md`; báo cáo cá nhân `report/team/2A202603410_NguyenHoangHuy.md`.
 
+## PhanHaiDang-2A202603409
+
+### Phần việc phụ trách
+
+- Người kiểm số (CP1–CP2): đối chiếu số liệu, hoàn thiện bảng và câu trả lời A–B trong `report/team/bang_chi_phi.md`.
+- Theo phân công đổi sang viết code CP4–CP5; phần D1/E1 chưa được xác nhận hoàn thành trong báo cáo cá nhân.
+
+### Đóng góp cụ thể
+
+- Điền bảng A1–A4, B1–B3 và trả lời đến B4 theo số liệu hướng dẫn; bổ sung nhãn `simulated` và lưu ý phạm vi chi phí.
+- Giải thích chi phí 4.472 đ/việc thành công, gấp 16,3 lần hoá đơn mỗi yêu cầu [simulated]; xếp hạng yếu tố ảnh hưởng: làm lại, xem lại, lương nhân viên.
+- Nêu giới hạn 2 lần chạy rẻ nhất cho cả hệ thống: 6.901.220 đ [simulated]; phân tích xem lại 100% theo hai giả định thời gian làm lại.
+- Dùng ChatGPT/Codex hỗ trợ tổng hợp và soạn nội dung từ hướng dẫn; không chạy lại Python, cần đọc lại và xác nhận trước khi nộp.
+
+### Bằng chứng
+
+- [Bảng chi phí A–B](report/team/bang_chi_phi.md).
+- [Báo cáo cá nhân](report/team/2A202603409_PhanHaiDang.md).
+- Nguồn đối chiếu: [Hướng dẫn chi tiết](docs/Lab13_Huong_dan_chi_tiet_buoi_chieu.md), phần A–B.
