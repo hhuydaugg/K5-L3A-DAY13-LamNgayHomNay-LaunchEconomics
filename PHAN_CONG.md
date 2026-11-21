@@ -58,9 +58,10 @@ Mỗi người tự làm báo cáo cá nhân `report/team/MSSV_HoTen.md` (copy t
 9. **TV3 và TV4:**
    - ngồi tách nhau, mỗi người gắn nhãn độc lập 20 ca (trong file docx đề bài) trong 8 phút, không trao đổi;
    - commit hai bộ nhãn trước khi so; không sửa bộ nhãn sau khi đã so.
+   - TV4: ~~gắn và commit bộ nhãn 2~~: đã xong (commit `c674ed3`, trước khi so).
 10. **TV1 và TV2** làm nốt CP2 trong lúc đó, rồi đọc trước phần D1.
 11. **TV3** so nhãn, tính tỉ lệ đồng thuận (cần ≥ 16/20; thấp hơn thì viết lại định nghĩa), và viết một câu quy tắc cho mỗi ca lệch.
-12. **TV4** điền bảng khắc phục 5 ca, đủ năm loại. Mỗi dòng có cách phát hiện đo được (event, ngưỡng, tần suất) và một vai trò phụ trách, không ghi "cả đội".
+12. **TV4** ~~điền bảng khắc phục 5 ca, đủ năm loại~~: đã xong (ca 9, 7, 18, 13, 17). Mỗi dòng có cách phát hiện đo được (event, ngưỡng, tần suất) và một vai trò phụ trách, không ghi "cả đội".
 
 ### 16:08 · CP4 — nhiệm vụ D
 
@@ -79,7 +80,7 @@ Mỗi người tự làm báo cáo cá nhân `report/team/MSSV_HoTen.md` (copy t
 17. **TV2** tính thử ba chỉ số: chính, dùng, an toàn.
 18. **TV3** viết `chi_so.md`: đặc tả chỉ số, thêm 1 chỉ số dùng và 1 chỉ số an toàn, liệt kê ≥ 6 event có `trace_id`.
 19. **TV4:**
-    - thêm ≥ 2 dòng rủi ro kinh tế lấy số từ bảng độ nhạy;
+    - ~~thêm ≥ 2 dòng rủi ro kinh tế lấy số từ bảng độ nhạy~~: đã xong (3 dòng trong `chi_so.md`);
     - hoàn thiện `ho_so_launch_v0.md`: bảy mục, dòng cuối là Go / Go có điều kiện / No-go.
 20. **TV1** rà soát:
     - mọi số giả lập có nhãn `simulated`;
