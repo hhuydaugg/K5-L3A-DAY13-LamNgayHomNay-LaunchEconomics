@@ -56,7 +56,8 @@
 - **Cách tự kiểm tra:**
   - ba phép thử A1 phải in ĐẠT trước khi tính tiếp;
   - trong code có kiểm tra tự động: mỗi kịch bản "giảm một nửa" bằng đúng nửa mức tăng của "gấp đôi";
-  - mọi số A2–B4 đều khớp số đối chiếu trong `docs/Lab13_Huong_dan_chi_tiet_buoi_chieu.md` (lệch < 2%). Riêng B4 với 15,3 phút ra 12.415 đ so với 12.414 đ, vì code dùng trung bình chính xác 15,2996 phút thay vì làm tròn.
+  - mọi số A2–B4 đều khớp số đối chiếu trong `docs/Lab13_Huong_dan_chi_tiet_buoi_chieu.md` (lệch < 2%).
+  - Riêng B4 với 15,3 phút: code in 12.415 đ, hồ sơ nhóm ghi 12.414 đ theo hướng dẫn. Lệch 1 đ do làm tròn, không phải do số phút: 11.173.054 ÷ 900 = 12.414,5 (trung bình chính xác 15,2996 phút) và 11.173.313 ÷ 900 = 12.414,8 (đúng 15,3 phút) đều làm tròn thành 12.415; hướng dẫn bỏ phần lẻ nên ra 12.414.
   - Cuối cùng tự tính tay lại một số: 4.373.585 ÷ 978 = 4.472 đ.
 
 ## 6. Tự đánh giá
