@@ -1,4 +1,4 @@
-﻿# Đặc tả chỉ số, event và rủi ro kinh tế · Nhiệm vụ E1, E2
+# Đặc tả chỉ số, event và rủi ro kinh tế · Nhiệm vụ E1, E2
 
 ## E1 · Đặc tả chỉ số
 
@@ -10,7 +10,7 @@
 | Dùng | Tỉ lệ yêu cầu nhóm can thiệp mà nhân viên mở gợi ý của trợ lý | Số request_id duy nhất có `agent_suggestion_opened` chia số request_id duy nhất có `refund_request_created` thuộc nhóm can thiệp | Không cần tính |
 | An toàn | Tỉ lệ đơn hoàn sai tiền theo kiểm tra mẫu | Số request_id duy nhất có kiểm tra phát hiện `so_tien_da_hoan != so_tien_dung`, chia số request_id duy nhất đã kiểm tra | Không cần tính |
 
-Chỉ số trong đợt chạy thử là các giá trị trên, tính từ 1.200 yêu cầu có `request_id` hợp lệ, bỏ dòng tổng cuối CSV. Toàn bộ dữ liệu là giả lập; chưa có đối chứng để kết luận trợ lý làm tăng chỉ số. Mở lại chỉ là chỉ báo an toàn, không bao quát mọi lỗi.
+Chỉ số trong đợt chạy thử là các giá trị trên, tính từ 1.200 yêu cầu trong `logix_requests.csv`. Toàn bộ dữ liệu là giả lập; chưa có đối chứng để kết luận trợ lý làm tăng chỉ số. Mở lại chỉ là chỉ báo an toàn, không bao quát mọi lỗi.
 
 ## Danh sách event
 

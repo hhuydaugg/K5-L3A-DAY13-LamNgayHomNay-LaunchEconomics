@@ -1,4 +1,4 @@
-﻿# Hồ sơ launch v0 · Trợ lý hoàn phí LogiX-VN · Gate 2a
+# Hồ sơ launch v0 · Trợ lý hoàn phí LogiX-VN · Gate 2a
 
 Nhóm: **LamNgayHomNay** · Lớp: **L3A**. Hồ sơ đề xuất kế hoạch pilot; toàn bộ dữ liệu lab là giả lập. Nhãn `simulated` chỉ các kết quả có chi phí thời gian nhân viên giả lập.
 

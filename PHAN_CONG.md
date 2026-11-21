@@ -81,7 +81,7 @@ Mỗi người tự làm báo cáo cá nhân `report/team/MSSV_HoTen.md` (copy t
 18. **TV3** viết `chi_so.md`: đặc tả chỉ số, thêm 1 chỉ số dùng và 1 chỉ số an toàn, liệt kê ≥ 6 event có `trace_id`.
 19. **TV4:**
     - ~~thêm ≥ 2 dòng rủi ro kinh tế lấy số từ bảng độ nhạy~~: đã xong (3 dòng trong `chi_so.md`);
-    - hoàn thiện `ho_so_launch_v0.md`: bảy mục, dòng cuối là Go / Go có điều kiện / No-go.
+    - ~~hoàn thiện `ho_so_launch_v0.md`: bảy mục, dòng cuối là Go / Go có điều kiện / No-go~~: đã xong (Go có điều kiện).
 20. **TV1** rà soát:
     - mọi số giả lập có nhãn `simulated`;
     - `grep -rni production report/team` không in gì;
@@ -94,7 +94,7 @@ Mỗi người tự làm báo cáo cá nhân `report/team/MSSV_HoTen.md` (copy t
 
 ### 17:45 · Đóng gói và nộp
 
-23. **TV4** điền `group_report.md`.
+23. **TV4** ~~điền `group_report.md`~~: đã xong, còn kết quả duyệt chéo điền sau Gate 2a.
 24. **Mỗi người:**
     - tạo báo cáo cá nhân;
     - ghi phần đóng góp của mình trong `TEAM.md`;

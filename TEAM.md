@@ -91,3 +91,21 @@ Sao chép mục dưới đây cho từng thành viên.
 - CP4: [code D1](src/lab13.py), [kế hoạch pilot](report/team/pilot_plan.yaml); 20 cụm/nhóm, MDE 6 điểm, 299 yêu cầu/người. Chưa chạy kiểm tra Python/YAML.
 - Nguồn đối chiếu: [Hướng dẫn chi tiết](docs/Lab13_Huong_dan_chi_tiet_buoi_chieu.md), phần A–B.
 
+## KhuatDuyHieu-2A202603383
+
+### Phần việc phụ trách
+
+- Người gắn nhãn 2, kiêm giữ hồ sơ: `report/team/ho_so_launch_v0.md`, bộ nhãn 2 và bảng khắc phục trong `report/team/bang_loi.md`, phần E2 rủi ro kinh tế trong `report/team/chi_so.md`, `report/team/group_report.md`; trình bày hồ sơ ở Gate 2a.
+
+### Đóng góp cụ thể
+
+- Hồ sơ launch v0: điền dần cả bảy mục từ CP1 (chi phí 4.472 đ, 0,49× cả hệ thống, 0,38× trong phạm vi [simulated]; ba chỉ số E1; số D1), soạn đề xuất Go có điều kiện.
+- Gắn nhãn độc lập 20 ca, commit trước khi so; đồng thuận với người gắn nhãn 1 là 19/20 = 95%.
+- Bảng khắc phục 5 ca (9, 7, 18, 13, 17), đủ năm loại, mỗi dòng có event, ngưỡng, tần suất, vai trò.
+- Ba dòng rủi ro kinh tế: làm lại gấp đôi +51,8%, xem lại 100% 0,98–1,03×, khối lượng còn một nửa 5.784 đ [simulated].
+- Rà soát: phát hiện và khôi phục dòng thừa trong `src/logix_requests.csv`, chạy lại `lab13.py` cho kết quả giống hệt.
+
+### Bằng chứng
+
+- Commit `c674ed3` (bộ nhãn 2), `95b8fb6` (bảng khắc phục), `18611f1` (rủi ro E2), `132318b` (hồ sơ mục 4, 6, đề xuất).
+- [Báo cáo cá nhân](report/team/2A202603383_KhuatDuyHieu.md), [báo cáo nhóm](report/team/group_report.md).
